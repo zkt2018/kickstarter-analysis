@@ -9,10 +9,10 @@ Using Excel, we have organized, sorted and analysed the Kickstarter dataset to s
 ## **Analysis and Challenges**
 As the Kickstarter dataset demonstrates the results for many different fundraising projects from different categories and countries, we needed to narrow down and filter the data in several ways to get a better demonstration of the analysis. We used the tools such as Filters, sorting values, creating Pivot tables and Pivot charts to measure data in several ways. Following images show some of the data evaluations we have done:
 
-### 1. Analysis of Outcomes Based on Launch Date: Here we used Pivot Table and Pivot Chart to filter and analyse the outcomes data within Theater category based on the Launched date. According to the table, more than half of the projects in this parent category have been successful, the number of failed ones has been about half of the successful (approximately %25 of the total), and the failed projects include less than %10 of the total.
+1. Analysis of Outcomes Based on Launch Date: Here we used Pivot Table and Pivot Chart to filter and analyse the outcomes data within Theater category based on the Launched date. According to the table, more than half of the projects in this parent category have been successful, the number of failed ones has been about half of the successful (approximately %25 of the total), and the failed projects include less than %10 of the total.
 [Theater Outcomes by Launch Date](https://github.com/zkt2018/kickstarter-analysis/blob/main/Kickstarter_Challenge.xlsx)
 
-### 2. Analysis of Outcomes Based on Goals: To create this table and the chart, we used `COUNTIFS` formula to calculate the number and percentage of *successful*, *failed*, and *canceled* outcomes in the *Plays* subcategory. In order to get a better understanding of the dependence of resulted outcome on the goal amount, we classified the goals based on their amounts. Interestingly, the number of the canceled projects in *plays* has been zero at all times. The successful and failed  ones fluctuated irregularly among the different amounts.
+2. Analysis of Outcomes Based on Goals: To create this table and the chart, we used `COUNTIFS` formula to calculate the number and percentage of *successful*, *failed*, and *canceled* outcomes in the *Plays* subcategory. In order to get a better understanding of the dependence of resulted outcome on the goal amount, we classified the goals based on their amounts. Interestingly, the number of the canceled projects in *plays* has been zero at all times. The successful and failed  ones fluctuated irregularly among the different amounts.
 [Outcomes Based on Goals](https://github.com/zkt2018/kickstarter-analysis/blob/main/Kickstarter_Challenge.xlsx)
 
 ### **Challenges and Difficulties Encountered**
@@ -20,15 +20,15 @@ One of the challenges in this project was reassuring the formulae and the charts
 
 ![Outcomes_vs_Goals_Wrong](https://github.com/zkt2018/kickstarter-analysis/blob/main/resources/Outcomes_vs_Goals_Wrong.png)
 
-### The reason for the problem was selecting incorrect type of chart. By comparing this chart with the correct one, and changing the type of the chart, it displayed the correct rates.
+The reason for the problem was selecting incorrect type of chart. By comparing this chart with the correct one, and changing the type of the chart, it displayed the correct rates.
 
 ![Outcomes_vs_Goals_Wrong_2](https://github.com/zkt2018/kickstarter-analysis/blob/main/resources/Outcomes_vs_Goals_Wrong_2.png)
 
-### However, it seemed there was another issue going on. The problem was getting zero percent in *failed* outcomes under the *45000 to 49999* category, while, based on the dataset, the value for this cell should be 1 which results in %100 of the total projects. Hence, I needed to make sure the formula in that specific cell is correct. By checking the formula, I found a typographical error in the word *failed*. 
+However, it seemed there was another issue going on. The problem was getting zero percent in *failed* outcomes under the *45000 to 49999* category, while, based on the dataset, the value for this cell should be 1 which results in %100 of the total projects. Hence, I needed to make sure the formula in that specific cell is correct. By checking the formula, I found a typographical error in the word *failed*. 
 
 ![Outcomes_vs_Goals_Wrong_Typo](https://github.com/zkt2018/kickstarter-analysis/blob/main/resources/Outcomes_vs_Goals_Wrong_Typo.png)
 
-### In analysing large datasets, it is crucial to consider mostly the factors that help us to get a better understanding of the analysis. For instance, there were many different categories and subcategories in this dataset. We needed to make sure the ones that we are using in our analysis, can give a clear idea to Louise for her further estimations and setting a realistic goal.
+In analysing large datasets, it is crucial to consider mostly the factors that help us to get a better understanding of the analysis. For instance, there were many different categories and subcategories in this dataset. We needed to make sure the ones that we are using in our analysis, can give a clear idea to Louise for her further estimations and setting a realistic goal.
 Often, and as in this dataset, there are outliers that impact the average and the statistics that we are using, while they are irregular cases. For instance there were many projects that showed the set goal was less than $10 whereas the pledged amount was more than $5000. To find the outlier values, we used a Plot Box chart where these values are more distinct.
 
 ![Plot_Box](https://github.com/zkt2018/kickstarter-analysis/blob/main/resources/Plot_Box.png)
